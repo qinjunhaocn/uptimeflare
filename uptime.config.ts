@@ -6,8 +6,7 @@ const pageConfig: PageConfig = {
   // Links shown at the header of your status page, could set `highlight` to `true`
   links: [
     { link: 'https://github.com/lyc8503', label: 'GitHub' },
-    { link: 'https://blog.lyc8503.net/', label: 'Blog' },
-    { link: 'mailto:me@lyc8503.net', label: 'Email Me', highlight: true },
+    { link: 'https://blog.lyc8503.net/', label: 'Blog' },  // 删除了 "Email Me" 的这行
   ],
   // [OPTIONAL] Group your monitors
   // If not specified, all monitors will be shown in a single list
