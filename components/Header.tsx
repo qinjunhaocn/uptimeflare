@@ -22,7 +22,6 @@ export default function Header() {
     <header className={classes.header}>
       <Container size="md" className={classes.inner}>
         <div>
-          <a href="https://github.com/lyc8503/UptimeFlare" target="_blank">
             <Text size="xl" span>
               🕒
             </Text>
@@ -35,7 +34,6 @@ export default function Header() {
             >
               UptimeFlare
             </Text>
-          </a>
         </div>
 
         <Group gap={5} visibleFrom="sm">
