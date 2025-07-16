@@ -12,8 +12,7 @@ const pageConfig: PageConfig = {
   // If not specified, all monitors will be shown in a single list
   // If specified, monitors will be grouped and ordered, not-listed monitors will be invisble (but still monitored)
   group: {
-    '🌐 Public (example group name)': ['foo_monitor', 'bar_monitor', 'more monitor ids...'],
-    '🔐 Private': ['test_tcp_monitor'],
+    '🌐 公开': ['foo_monitor', 'bar_monitor', 'more monitor ids...'],
   },
 }
 
@@ -29,15 +28,15 @@ const workerConfig: WorkerConfig = {
       // `id` should be unique, history will be kept if the `id` remains constant
       id: 'foo_monitor',
       // `name` is used at status page and callback message
-      name: 'My API Monitor',
+      name: '来宾招生考试院',
       // `method` should be a valid HTTP Method
       method: 'POST',
       // `target` is a valid URL
-      target: 'https://example.com',
+      target: 'https://www.lbzklq.com',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
       tooltip: 'This is a tooltip for this monitor',
       // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
-      statusPageLink: 'https://example.com',
+      statusPageLink: 'https://www.lbzklq.com',
       // [OPTIONAL] `hideLatencyChart` will hide status page latency chart if set to true
       hideLatencyChart: false,
       // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
@@ -61,18 +60,6 @@ const workerConfig: WorkerConfig = {
       checkProxy: 'https://xxx.example.com OR worker://weur',
       // [OPTIONAL] if true, the check will fallback to local if the specified proxy is down
       checkProxyFallback: true,
-    },
-    // Example TCP Monitor
-    {
-      id: 'test_tcp_monitor',
-      name: 'Example TCP Monitor',
-      // `method` should be `TCP_PING` for tcp monitors
-      method: 'TCP_PING',
-      // `target` should be `host:port` for tcp monitors
-      target: '1.2.3.4:22',
-      tooltip: 'My production server SSH',
-      statusPageLink: 'https://example.com',
-      timeout: 5000,
     },
   ],
   notification: {
